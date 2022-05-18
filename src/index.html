@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="grid">
+        <div class="menu-container">
+          <div class="menu-container__logo">CHESS</div>
+          <div class="menu-container__menu">
+            <div class="menu-container__menu__time">CZAS GRY</div>
+            <input type="range" min="2" max="30" value="5" class="menu-container__menu__slider" id="myRange" />
+            <div class="menu-container__menu__info">10 min</div>
+            <button class="menu-container__button" id='start'>ROPOCZNIJ GRE</button>
+          </div>
+          <div class="menu-container__undo-button">
+            <button class="menu-container__button">ZMIEŃ STRONĘ</button>
+          </div>
+        </div>
+        <div class="board-container">
+          <div class="clock-container">
+            <div class="clock-container__white">2:00</div>
+            <div class="clock-container__black">2:00</div>
+          </div>
+          <div class="board">
+            <div class="one border"></div>
+            <div class="two border"></div>
+            <div class="three border"></div>
+            <div class="four border">
+              <div class="row-index">8</div>
+              <div class="row-index">7</div>
+              <div class="row-index">6</div>
+              <div class="row-index">5</div>
+              <div class="row-index">4</div>
+              <div class="row-index">3</div>
+              <div class="row-index">2</div>
+              <div class="row-index">1</div>
+            </div>
+            <div class="five border">
+              <div id="A8" class="box"></div>
+              <div id="B8" class="box"></div>
+              <div id="C8" class="box"></div>
+              <div id="D8" class="box"></div>
+              <div id="E8" class="box"></div>
+              <div id="F8" class="box"></div>
+              <div id="G8" class="box"></div>
+              <div id="H8" class="box"></div>
+
+              <div id="A7" class="box"></div>
+              <div id="B7" class="box"></div>
+              <div id="C7" class="box"></div>
+              <div id="D7" class="box"></div>
+              <div id="E7" class="box"></div>
+              <div id="F7" class="box"></div>
+              <div id="G7" class="box"></div>
+              <div id="H7" class="box"></div>
+
+              <div id="A6" class="box"></div>
+              <div id="B6" class="box"></div>
+              <div id="C6" class="box"></div>
+              <div id="D6" class="box"></div>
+              <div id="E6" class="box"></div>
+              <div id="F6" class="box"></div>
+              <div id="G6" class="box"></div>
+              <div id="H6" class="box"></div>
+
+              <div id="A5" class="box"></div>
+              <div id="B5" class="box"></div>
+              <div id="C5" class="box"></div>
+              <div id="D5" class="box"></div>
+              <div id="E5" class="box"></div>
+              <div id="F5" class="box"></div>
+              <div id="G5" class="box"></div>
+              <div id="H5" class="box"></div>
+
+              <div id="A4" class="box"></div>
+              <div id="B4" class="box"></div>
+              <div id="C4" class="box"></div>
+              <div id="D4" class="box"></div>
+              <div id="E4" class="box"></div>
+              <div id="F4" class="box"></div>
+              <div id="G4" class="box"></div>
+              <div id="H4" class="box"></div>
+
+              <div id="A3" class="box"></div>
+              <div id="B3" class="box"></div>
+              <div id="C3" class="box"></div>
+              <div id="D3" class="box"></div>
+              <div id="E3" class="box"></div>
+              <div id="F3" class="box"></div>
+              <div id="G3" class="box"></div>
+              <div id="H3" class="box"></div>
+
+              <div id="A2" class="box"></div>
+              <div id="B2" class="box"></div>
+              <div id="C2" class="box"></div>
+              <div id="D2" class="box"></div>
+              <div id="E2" class="box"></div>
+              <div id="F2" class="box"></div>
+              <div id="G2" class="box"></div>
+              <div id="H2" class="box"></div>
+
+              <div id="A1" class="box"></div>
+              <div id="B1" class="box"></div>
+              <div id="C1" class="box"></div>
+              <div id="D1" class="box"></div>
+              <div id="E1" class="box"></div>
+              <div id="F1" class="box"></div>
+              <div id="G1" class="box"></div>
+              <div id="H1" class="box"></div>
+            </div>
+            <div class="six border"></div>
+            <div class="seven border"></div>
+            <div class="eight border">
+              <div class="column-index">a</div>
+              <div class="column-index">b</div>
+              <div class="column-index">c</div>
+              <div class="column-index">d</div>
+              <div class="column-index">e</div>
+              <div class="column-index">f</div>
+              <div class="column-index">g</div>
+              <div class="column-index">h</div>
+            </div>
+            <div class="nine border"></div>
+          </div>
+        </div>
+        <div class="history-container">
+          <div class="history-container__header">Historia</div>
+          <div class="history-container__moves"></div>
+        </div>
+      </div>
+      <div id="button"></div>
+    </div>
+  </body>
+</html>
